@@ -50,9 +50,15 @@ CHECK_LIBCUNIT
 # Checks for libraries.
 
 # Checks for header files.
-AC_CHECK_HEADERS([stdlib.h])
+AC_CHECK_HEADERS([stddef.h stdint.h stdlib.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_INT16_T
+AC_TYPE_INT32_T
+AC_TYPE_UINT16_T
+AC_TYPE_UINT32_T
+AC_TYPE_UINT64_T
+AC_TYPE_UINT8_T
 
 # Checks for library functions.
 AC_FUNC_MALLOC
@@ -75,15 +81,25 @@ AC_CONFIG_FILES([Makefile
                  build-script/rock-chips/Makefile
                  build-script/rock-chips/rk3568/Makefile
                  build-script/stm32/Makefile
-                 build-script/stm32/stm32h743/Makefile
+                 build-script/stm32/stm32h7xx/Makefile
                  doc/Makefile
                  example/Makefile
                  include/Makefile
+                 include/stm32/Makefile
+                 include/stm32/cmsis/Makefile
+                 include/stm32/cmsis/core/Makefile
+                 include/stm32/cmsis/stm32h7xx/Makefile
+                 include/stm32/device/Makefile
+                 include/stm32/device/stm32h7xx/Legacy/Makefile
+                 include/stm32/device/stm32h7xx/Makefile
                  res/Makefile
                  res/voice/Makefile
                  res/voice/cn/Makefile
                  res/voice/en/Makefile
                  src/Makefile
+                 src/stm32/Makefile
+                 src/stm32/stm32h7xx/Legacy/Makefile
+                 src/stm32/stm32h7xx/Makefile
                  test/Makefile])
 AC_OUTPUT
 

@@ -18,6 +18,12 @@
 #     last modified: 05/03 2021 10:35
 # ===============================================================
 
+SUBDIRS =
+
+if COMPILE_SELECT_VENDER_STM32
+SUBDIRS += stm32
+endif
+
 # ------------------
 # defining variables
 # ------------------
