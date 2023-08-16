@@ -48,9 +48,7 @@ _define_com     +=
 
 _include_com    += -I$(top_srcdir)/include
 
-_sources_com    += \
-                   hy_calc.c    \
-                   hy_module.c
+_sources_com    += hy_mcu.c
 
 _cppflags_com   += \
                    $(_no_error_com) \
@@ -63,9 +61,9 @@ _cxxflags_com   +=
 
 _ldflags_com    += -version-info @current@:@revision@:@age@
 
-if !COMPILE_DEBUG_INFO
-_ldflags_com    += -export-symbols-regex 'Hy*'
-endif
+# if !COMPILE_DEBUG_INFO
+# _ldflags_com    += -export-symbols-regex 'Hy*'
+# endif
 
 if COMPILE_SELECT_VENDER_STM32
 _ldadd_com      += $(top_builddir)/src/stm32/libstm32.la

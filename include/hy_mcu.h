@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * Release under GPLv-3.0.
  * 
- * @file    hy_calc.h
+ * @file    hy_mcu.h
  * @brief   
  * @author  gnsyxiang <gnsyxiang@163.com>
- * @date    22/03 2022 16:23
+ * @date    16/08 2023 14:50
  * @version v0.0.1
  * 
  * @since    note
@@ -13,18 +13,18 @@
  * 
  *     change log:
  *     NO.     Author              Date            Modified
- *     00      zhenquan.qiu        22/03 2022      create the file
+ *     00      zhenquan.qiu        16/08 2023      create the file
  * 
- *     last modified: 22/03 2022 16:23
+ *     last modified: 16/08 2023 14:50
  */
-#ifndef __AUTOTOOLS_DEMO_LIB_INCLUDE_HY_CALC_H_
-#define __AUTOTOOLS_DEMO_LIB_INCLUDE_HY_CALC_H_
+#ifndef __LIBHY_MCU_INCLUDE_HY_MCU_H_
+#define __LIBHY_MCU_INCLUDE_HY_MCU_H_
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-int HyCalcAdd(int a, int b);
+void HyMcuCheck(void);
 
 #ifdef __cplusplus
 }
