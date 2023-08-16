@@ -12,6 +12,6 @@ Requires:
 Requires.private:
 Conflicts:
 
-Cflags: -I${includedir}
+Cflags: -I${includedir}/@project_name@
 Libs: -L${libdir} -l@project_name@
 Libs.private:
