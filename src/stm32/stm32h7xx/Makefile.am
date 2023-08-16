@@ -142,38 +142,38 @@ _sources_com    += \
                    stm32h7xx_hal_sai.c \
                    stm32h7xx_hal_tim_ex.c
 
-# _sources_com    += \
-#                    stm32h7xx_ll_gpio.c \
-#                    stm32h7xx_ll_hrtim.c \
-#                    stm32h7xx_ll_i2c.c \
-#                    stm32h7xx_ll_lptim.c \
-#                    stm32h7xx_ll_lpuart.c \
-#                    stm32h7xx_ll_adc.c \
-#                    stm32h7xx_ll_mdma.c \
-#                    stm32h7xx_ll_bdma.c \
-#                    stm32h7xx_ll_opamp.c \
-#                    stm32h7xx_ll_comp.c \
-#                    stm32h7xx_ll_pwr.c \
-#                    stm32h7xx_ll_cordic.c \
-#                    stm32h7xx_ll_rcc.c \
-#                    stm32h7xx_ll_crc.c \
-#                    stm32h7xx_ll_rng.c \
-#                    stm32h7xx_ll_crs.c \
-#                    stm32h7xx_ll_rtc.c \
-#                    stm32h7xx_ll_dac.c \
-#                    stm32h7xx_ll_sdmmc.c \
-#                    stm32h7xx_ll_delayblock.c \
-#                    stm32h7xx_ll_spi.c \
-#                    stm32h7xx_ll_dma2d.c \
-#                    stm32h7xx_ll_swpmi.c \
-#                    stm32h7xx_ll_dma.c \
-#                    stm32h7xx_ll_tim.c \
-#                    stm32h7xx_ll_exti.c \
-#                    stm32h7xx_ll_usart.c \
-#                    stm32h7xx_ll_fmac.c \
-#                    stm32h7xx_ll_usb.c \
-#                    stm32h7xx_ll_fmc.c \
-#                    stm32h7xx_ll_utils.c
+_sources_com    += \
+                   stm32h7xx_ll_gpio.c \
+                   stm32h7xx_ll_hrtim.c \
+                   stm32h7xx_ll_i2c.c \
+                   stm32h7xx_ll_lptim.c \
+                   stm32h7xx_ll_lpuart.c \
+                   stm32h7xx_ll_adc.c \
+                   stm32h7xx_ll_mdma.c \
+                   stm32h7xx_ll_bdma.c \
+                   stm32h7xx_ll_opamp.c \
+                   stm32h7xx_ll_comp.c \
+                   stm32h7xx_ll_pwr.c \
+                   stm32h7xx_ll_cordic.c \
+                   stm32h7xx_ll_rcc.c \
+                   stm32h7xx_ll_crc.c \
+                   stm32h7xx_ll_rng.c \
+                   stm32h7xx_ll_crs.c \
+                   stm32h7xx_ll_rtc.c \
+                   stm32h7xx_ll_dac.c \
+                   stm32h7xx_ll_sdmmc.c \
+                   stm32h7xx_ll_delayblock.c \
+                   stm32h7xx_ll_spi.c \
+                   stm32h7xx_ll_dma2d.c \
+                   stm32h7xx_ll_swpmi.c \
+                   stm32h7xx_ll_dma.c \
+                   stm32h7xx_ll_tim.c \
+                   stm32h7xx_ll_exti.c \
+                   stm32h7xx_ll_usart.c \
+                   stm32h7xx_ll_fmac.c \
+                   stm32h7xx_ll_usb.c \
+                   stm32h7xx_ll_fmc.c \
+                   stm32h7xx_ll_utils.c
 
 _cppflags_com   += \
                    $(_no_error_com) \

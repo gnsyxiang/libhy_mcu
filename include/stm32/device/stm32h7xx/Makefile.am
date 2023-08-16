@@ -128,46 +128,46 @@ _install_headers_com    += \
                            stm32h7xx_hal_opamp.h \
                            stm32h7xx_hal_sdram.h
 
-# _install_headers_com    += \
-#                            stm32h7xx_ll_cordic.h \
-#                            stm32h7xx_ll_opamp.h \
-#                            stm32h7xx_ll_cortex.h \
-#                            stm32h7xx_ll_pwr.h \
-#                            stm32_assert_template.h \
-#                            stm32h7xx_ll_crc.h \
-#                            stm32h7xx_ll_rcc.h \
-#                            stm32h7xx_ll_crs.h \
-#                            stm32h7xx_ll_rng.h \
-#                            stm32h7xx_ll_dac.h \
-#                            stm32h7xx_ll_rtc.h \
-#                            stm32h7xx_ll_delayblock.h \
-#                            stm32h7xx_ll_sdmmc.h \
-#                            stm32h7xx_ll_dma2d.h \
-#                            stm32h7xx_ll_spi.h \
-#                            stm32h7xx_ll_dma.h \
-#                            stm32h7xx_ll_swpmi.h \
-#                            stm32h7xx_ll_dmamux.h \
-#                            stm32h7xx_ll_system.h \
-#                            stm32h7xx_ll_exti.h \
-#                            stm32h7xx_ll_tim.h \
-#                            stm32h7xx_ll_fmac.h \
-#                            stm32h7xx_ll_usart.h \
-#                            stm32h7xx_ll_fmc.h \
-#                            stm32h7xx_ll_usb.h \
-#                            stm32h7xx_ll_gpio.h \
-#                            stm32h7xx_ll_utils.h \
-#                            stm32h7xx_ll_hrtim.h \
-#                            stm32h7xx_ll_wwdg.h \
-#                            stm32h7xx_ll_hsem.h \
-#                            stm32h7xx_ll_i2c.h \
-#                            stm32h7xx_ll_adc.h \
-#                            stm32h7xx_ll_iwdg.h \
-#                            stm32h7xx_ll_bdma.h \
-#                            stm32h7xx_ll_lptim.h \
-#                            stm32h7xx_ll_bus.h \
-#                            stm32h7xx_ll_lpuart.h \
-#                            stm32h7xx_ll_comp.h \
-#                            stm32h7xx_ll_mdma.h
+_install_headers_com    += \
+                           stm32h7xx_ll_cordic.h \
+                           stm32h7xx_ll_opamp.h \
+                           stm32h7xx_ll_cortex.h \
+                           stm32h7xx_ll_pwr.h \
+                           stm32_assert_template.h \
+                           stm32h7xx_ll_crc.h \
+                           stm32h7xx_ll_rcc.h \
+                           stm32h7xx_ll_crs.h \
+                           stm32h7xx_ll_rng.h \
+                           stm32h7xx_ll_dac.h \
+                           stm32h7xx_ll_rtc.h \
+                           stm32h7xx_ll_delayblock.h \
+                           stm32h7xx_ll_sdmmc.h \
+                           stm32h7xx_ll_dma2d.h \
+                           stm32h7xx_ll_spi.h \
+                           stm32h7xx_ll_dma.h \
+                           stm32h7xx_ll_swpmi.h \
+                           stm32h7xx_ll_dmamux.h \
+                           stm32h7xx_ll_system.h \
+                           stm32h7xx_ll_exti.h \
+                           stm32h7xx_ll_tim.h \
+                           stm32h7xx_ll_fmac.h \
+                           stm32h7xx_ll_usart.h \
+                           stm32h7xx_ll_fmc.h \
+                           stm32h7xx_ll_usb.h \
+                           stm32h7xx_ll_gpio.h \
+                           stm32h7xx_ll_utils.h \
+                           stm32h7xx_ll_hrtim.h \
+                           stm32h7xx_ll_wwdg.h \
+                           stm32h7xx_ll_hsem.h \
+                           stm32h7xx_ll_i2c.h \
+                           stm32h7xx_ll_adc.h \
+                           stm32h7xx_ll_iwdg.h \
+                           stm32h7xx_ll_bdma.h \
+                           stm32h7xx_ll_lptim.h \
+                           stm32h7xx_ll_bus.h \
+                           stm32h7xx_ll_lpuart.h \
+                           stm32h7xx_ll_comp.h \
+                           stm32h7xx_ll_mdma.h
 
 # ------------------
 # make install files
