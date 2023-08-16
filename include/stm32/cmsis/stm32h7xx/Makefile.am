@@ -29,12 +29,12 @@ install_includedir      = $(includedir)/@project_name@
 # ---------------------
 # add necessary content
 # ---------------------
-_no_install_headers_com += \
-                           stm32h7xx.h \
-                           stm32h743xx.h \
-                           system_stm32h7xx.h
+_no_install_headers_com +=
 
-_install_headers_com    +=
+_install_headers_com    += \
+                           system_stm32h7xx.h \
+                           stm32h743xx.h \
+                           stm32h7xx.h
 
 # ------------------
 # make install files

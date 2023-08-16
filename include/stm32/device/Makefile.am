@@ -35,11 +35,11 @@ install_includedir      = $(includedir)/@project_name@
 # ---------------------
 # add necessary content
 # ---------------------
-if COMPILE_SELECT_CHIP_STM32H7XX
-_no_install_headers_com += stm32h7xx_hal_conf.h
-endif
+_no_install_headers_com +=
 
-_install_headers_com    +=
+if COMPILE_SELECT_CHIP_STM32H7XX
+_install_headers_com    += stm32h7xx_hal_conf.h
+endif
 
 # ------------------
 # make install files

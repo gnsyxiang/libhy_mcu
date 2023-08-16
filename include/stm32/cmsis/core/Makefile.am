@@ -29,14 +29,14 @@ install_includedir      = $(includedir)/@project_name@
 # ---------------------
 # add necessary content
 # ---------------------
-_no_install_headers_com += \
-                           core_cm7.h \
-                           cmsis_gcc.h \
-                           mpu_armv7.h \
-                           cmsis_version.h \
-                           cmsis_compiler.h
+_no_install_headers_com +=
 
-_install_headers_com    +=
+_install_headers_com    += \
+                           cmsis_compiler.h \
+                           cmsis_version.h \
+                           mpu_armv7.h \
+                           cmsis_gcc.h \
+                           core_cm7.h
 
 # ------------------
 # make install files
