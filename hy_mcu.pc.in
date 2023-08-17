@@ -6,7 +6,7 @@ libdir=@libdir@
 Name: @PACKAGE@
 Version: @VERSION@
 URL: @PACKAGE_URL@
-Description: autotools demo for lib
+Description: Manufacturer Driver Library（产商驱动库）
 
 Requires:
 Requires.private:
