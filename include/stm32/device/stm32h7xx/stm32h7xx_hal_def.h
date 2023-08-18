@@ -25,14 +25,6 @@
  extern "C" {
 #endif
 
-/* Includes ------------------------------------------------------------------*/
-#include "stm32h7xx.h"
-#include "Legacy/stm32_hal_legacy.h"
-#include <stddef.h>
-#include <math.h>
-
-/* Exported types ------------------------------------------------------------*/
-
 /**
   * @brief  HAL Status structures definition
   */
@@ -52,6 +44,14 @@ typedef enum
   HAL_UNLOCKED = 0x00,
   HAL_LOCKED   = 0x01
 } HAL_LockTypeDef;
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32h7xx.h"
+#include "Legacy/stm32_hal_legacy.h"
+#include <stddef.h>
+#include <math.h>
+
+/* Exported types ------------------------------------------------------------*/
 
 /* Exported macro ------------------------------------------------------------*/
 
