@@ -19,21 +19,17 @@ LT_INIT
 PKG_PROG_PKG_CONFIG([0.24])
 PKG_INSTALLDIR
 
+SELECT_VENDER
+SELECT_CHIP
+# SELECT_PRODUCT
+# SELECT_LANGUAGE
+
 # check m4 macro
 CHECK_PROJECT_INFO
 CHECK_VERSION_INFO
 CHECK_DOXYGEN
+CHECK_DEBUG_RELEASE
 # CHECK_JAVA
-
-SELECT_VENDER
-SELECT_CHIP
-# SELECT_PRODUCT
-SELECT_LANGUAGE
-
-AC_ARG_ENABLE([debug_info],
-              [AS_HELP_STRING([--enable-debug_info], [enable support for output debug info])],
-              [], [enable_debug_info=no])
-AM_CONDITIONAL(COMPILE_DEBUG_INFO, [test "$enable_debug_info" = "yes"])
 
 # Checks for programs.
 AC_PROG_CXX
@@ -45,41 +41,29 @@ AC_PROG_LN_S
 AC_PROG_MAKE_SET
 # AC_PROG_RANLIB
 
-CHECK_LIBCUNIT
-
 # Checks for libraries.
 
+CHECK_LIBCUNIT
+
 # Checks for header files.
-AC_CHECK_HEADERS([stddef.h stdint.h stdlib.h])
+AC_CHECK_HEADERS([stddef.h stdint.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_INT16_T
 AC_TYPE_INT32_T
+AC_TYPE_INT64_T
 AC_TYPE_UINT16_T
 AC_TYPE_UINT32_T
 AC_TYPE_UINT64_T
 AC_TYPE_UINT8_T
 
 # Checks for library functions.
-AC_FUNC_MALLOC
 
 AC_CONFIG_FILES([Makefile
                  $project_name.pc
                  build-script/Makefile
                  build-script/arterytek/Makefile
                  build-script/arterytek/at32f4xx/Makefile
-                 build-script/eeasytech/Makefile
-                 build-script/eeasytech/SV823/Makefile
-                 build-script/esp32/Makefile
-                 build-script/esp32/esp32/Makefile
-                 build-script/fullhan/MC6810E/Makefile
-                 build-script/fullhan/Makefile
-                 build-script/nxp/Makefile
-                 build-script/nxp/mx6ull/Makefile
-                 build-script/pc/Makefile
-                 build-script/pc/pc-chip/Makefile
-                 build-script/rock-chips/Makefile
-                 build-script/rock-chips/rk3568/Makefile
                  build-script/stm32/Makefile
                  build-script/stm32/stm32h7xx/Makefile
                  doc/Makefile
@@ -93,9 +77,6 @@ AC_CONFIG_FILES([Makefile
                  include/stm32/device/stm32h7xx/Legacy/Makefile
                  include/stm32/device/stm32h7xx/Makefile
                  res/Makefile
-                 res/voice/Makefile
-                 res/voice/cn/Makefile
-                 res/voice/en/Makefile
                  src/Makefile
                  src/stm32/Makefile
                  src/stm32/stm32h7xx/Legacy/Makefile

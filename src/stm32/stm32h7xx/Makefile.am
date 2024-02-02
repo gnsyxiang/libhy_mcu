@@ -20,7 +20,7 @@
 
 SUBDIRS = Legacy
 
-noinst_LTLIBRARIES = libstm32h7xx.la
+noinst_LTLIBRARIES = lib@vender@_@chip@.la
 
 # ------------------
 # defining variables
@@ -186,13 +186,13 @@ _cxxflags_com   +=
 
 _ldflags_com    +=
 
-_ldadd_com      += $(top_builddir)/src/stm32/stm32h7xx/Legacy/libstm32h7xx_legacy.la
+_ldadd_com      += $(top_builddir)/src/$(vender)/$(chip)/Legacy/libstm32h7xx_legacy.la
 
 _ldadd_com      += $(ldadd_com)
 
-libstm32h7xx_la_SOURCES     = $(_sources_com)
-libstm32h7xx_la_CPPFLAGS    = $(_cppflags_com)
-libstm32h7xx_la_CFLAGS      = $(_cflags_com)
-libstm32h7xx_la_CXXFLAGS    = $(_cxxflags_com)
-libstm32h7xx_la_LDFLAGS     = $(_ldflags_com)
-libstm32h7xx_la_LIBADD      = $(_ldadd_com)
+lib@vender@_@chip@_la_SOURCES   = $(_sources_com)
+lib@vender@_@chip@_la_CPPFLAGS  = $(_cppflags_com)
+lib@vender@_@chip@_la_CFLAGS    = $(_cflags_com)
+lib@vender@_@chip@_la_CXXFLAGS  = $(_cxxflags_com)
+lib@vender@_@chip@_la_LDFLAGS   = $(_ldflags_com)
+lib@vender@_@chip@_la_LIBADD    = $(_ldadd_com)

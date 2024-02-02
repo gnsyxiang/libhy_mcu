@@ -18,11 +18,7 @@
 #     last modified: 05/03 2021 10:35
 # ===============================================================
 
-SUBDIRS =
-
-if COMPILE_SELECT_VENDER_STM32
-SUBDIRS += stm32
-endif
+SUBDIRS = $(vender)
 
 # ------------------
 # defining variables
@@ -30,7 +26,7 @@ endif
 _no_install_headers_com =
 _install_headers_com    =
 
-install_includedir      = $(includedir)/@project_name@
+install_includedir      = $(includedir)/$(project_name)
 
 # ---------------------
 # add necessary content

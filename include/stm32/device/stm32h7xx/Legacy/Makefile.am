@@ -24,7 +24,7 @@
 _no_install_headers_com =
 _install_headers_com    =
 
-install_includedir      = $(includedir)/@project_name@/Legacy
+install_includedir      = $(includedir)/$(project_name)/Legacy
 
 # ---------------------
 # add necessary content
